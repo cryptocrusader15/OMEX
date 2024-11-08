@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CryptoCrusaders | Xchange your Crypto</title>
+    <meta name="description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+
+  <meta property="og:image" content="https://river.com/images/social/river-preview-1d7f875b692a43a2d831ac6f5169ee0e.webp">
+  <meta property="og:title" content="Crypto Crusaders| Buy and Sell Crypto Instantly">
+  <meta property="og:description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cryptocrusaders.com/">
+  <meta property="og:site_name" content="Crypto Crusaders">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Crypto_Crusade | Buy and Sell Crypto Instantly">
+  <meta property="twitter:description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+  <meta property="twitter:image" content="https://river.com/images/social/river-preview-1d7f875b692a43a2d831ac6f5169ee0e.webp">
+  <meta property="twitter:site" name="twitter:site" content="@Crypto__Crusade">
+    
+
+   <!--=============== FAVICON ===============-->
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="deposit.css">
+   <link rel="stylesheet" href="deposit.scss">
+   <link rel="stylesheet" href="css.css.map">
+   <link rel="stylesheet" href="csss.css.map">
+
+
+
+
+      <!--=============== ICON ===============-->
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/capital-omega.png">
+
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.6.1.js"></script>
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.6.1.min.js"></script>
+  <script src="modal.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <style>
+      .alert-success {
+          color: #ffffff;
+          background-color: rgb(185 226 66 / 75%) !important;
+          border-color: #badbcc !important;
+      }
+  </style>
+  <script>
+      var ohtml;
+  </script>
+</head>
+
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">
+            <img width="25" height="25" src="https://img.icons8.com/color/48/capital-omega.png" alt="crusader"/>OMEGA<span>XCHANGE</span> 
+           </a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="updates.html" class="nav__link">Updates</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="trade.html" class="nav__link">Trade With Us</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact Us</a>
+                 </li>
+              </ul>
+
+              <!--Close button-->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <!--Toggle button -->
+           <div class="nav__toogle" id="nav-toggle">
+           <i class="ri-menu-line"></i>
+         </div>
+        </nav>
+     </header>
+
+
+     <main class="main">
+
+
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="my-3">
+                    <div class="alert alert-primary"> </div>
+                </div>
+
+
+
+<style>
+    .s-btn a{font-size: 40px;margin: 5px;}
+</style>
+
+     <div class="row px-3">
+    <div class="col-12">
+        <div class="welcome-card mb-2">
+            <p>Whenever you invite someone, you will get a lottery chance of up to <b class="fs-2 text-warning">10%</b> PROFIT.</p>
+            <div class="mt-2">Number of lottery draws:<b class="fs-2 text-warning" id="reward">0</b></div>
+            <div class="d-flex flex-columna align-items-center justify-content-center mt-2">
+                <button style="flex:1;" onclick="apireq()" class="reqbtn mt-2 w-full btn solid_btn text-white btn-lg gobtn">
+                    Claim</button>
+            </div>
+            <!--<p class="text-danger mt-2">Warning: Please invite real users. Our system has a powerful detection system. If you are found to be cheating, your account will be permanently deleted and withdrawals from your wallet will be prohibited.</p>-->
+        </div>
+    </div>
+</div>
+
+<div class="row px-3">
+    <div class="col-12">
+        <div class="refer_div">
+            <h2 class="sec_title">Refer & Earn</h2>
+            <p>Earn solid <b class="fs-2 text-warning">10%</b> from your referral income.</p>
+            <div class="refer-code-wrap mt-3">
+                <input type="text" name id="refer-code" value="https://omegaxchange.com" readonly>
+                <button class="copy-btn">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+            <div class="col-12 s-btn d-flex justify-content-center flex-wrap" style="margin:1rem 0" >
+                <a style="" href='javascript:share_wa()'><i class="fab fa-whatsapp text-success"></i></a>
+                <a style="color: var(--bs-blue)" href='javascript:share_fb()'><i class="fab fa-facebook"></i></a>
+                <a style="color: var(--bs-pink)" href='javascript:share_ms()'><i class="fab fa-facebook-messenger"></i></a>
+                <a style="" href='javascript:share_twitter()'><i class="fab fa-twitter text-info"></i></a>
+                <a style="" href='javascript:share_tg()'><i class="fab fa-telegram text-info"></i></a>
+                <a style="" href='javascript:share_line()'><i class="fab fa-line text-success"></i></a>
+                <a style="color: var(--bs-indigo)" href='javascript:share_viber()'><i class="fab fa-viber"></i></a>
+                <a style="" href='javascript:share_skype()'><i class="fab fa-skype text-info"></i></a>
+            </div>
+            <span>👆Click the button above to share with your friends👆</span>
+        </div>
+    </div>
+
+</div>
+<div class="row px-3">
+    <div class="col-12">
+        <div class="welcome-card mb-2">
+            <h4 class="fw-bold pb-3">Referral Statistics</h4>
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead class="bgp">
+                    <tr>
+                        <th scope="col">Level</th>
+                        <th scope="col">Comission</th>
+                        <th scope="col">Total Referral</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>Tier 1</td>
+                        <td>
+                            <div class="pill">7%</div>
+                        </td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Tier 2</td>
+                        <td>
+                            <div class="pill pill-mist">2%</div>
+                        </td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Tier 3</td>
+                        <td>
+                            <div class="pill pill-green">1%</div>
+                        </td>
+                        <td>0</td>
+                    </tr>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row px-3">
+    <div class="col-12">
+        <div class="welcome-card mb-2">
+            <h4 class="fw-bold pb-3">Instructions</h4>
+            <p>The FaucetEarner Referral (Affiliate) Program Consists Of More Than 1 Level. What Does This Mean?</p>
+            <br>
+            <p>If A Person Uses Your Referral Link To Register, He Becomes Your Referral, And You Will Receive <b class="fs-2 text-warning">7%</b> Of Every Earnings He Makes. This Is A First-Level Or Tier 1 Referral.</p>
+            <br>
+            <p>The Person He Invites Becomes Your Second-Level Referral And You Will Receive <b class="fs-2 text-warning">2%</b> Comission From This Person’s Earnings.</p>
+            <br>
+            <p>Similarly, If Your Second-Level Referral Invites A New User, Then This User Becomes Your Third-Level Referral. You Will Receive <b class="fs-2 text-warning">1%</b> Comission From This Person’s Earnings.</p>
+        </div>
+    </div>
+</div>
+<div class="row px-3">
+    <div class="col-12">
+        <div class="welcome-card mb-2">
+            <h4 class="fw-bold pb-3">Your Referrals</h4>
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead class="bgp">
+                    <tr>
+                        <th scope="col">Email</th>
+                        <th scope="col">Time</th>
+                    </tr>
+                    </thead>
+
+
+
+                    <tbody>
+                                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="text-center d-flex justify-content-center">    </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
+<script src="public/kiddynew/dash/js/main.js"></script>
+<script src="public/bootstrap/js/popper.min.js"></script>
+<script src="public/bootstrap/js/bootstrap.min.js"></script>
+<script src="public/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="public/assets/js/app.js"></script>
+<script src="public/js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        App.init();
+    });
+</script>
+
+<script src="public/assets/js/custom.js"></script>
+<script src="public/plugins/sweetalerts/sweetalert2.min.js"></script>
+<script src="public/plugins/sweetalerts/custom-sweetalert.js"></script>
+<script>
+    $(".adoption option").hide();
+    $(".adoption #default_adoption").show();
+    $("#adtype").change(function () {
+        var adtype = $(this).val();
+        $(".adoption option").hide();
+        $(".adoption option:selected").removeAttr("selected");
+        $(".adoption #default_adoption").show();
+        $(".adoption #default_adoption").attr('selected', 'selected');
+        $(".adoption #"+adtype).show();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $(".ptc_window").click(function(){
+            let tmp_percent;
+            var adid = $(this).attr("data-adkey");
+            $("#parprogressbar_"+adid).show();
+            let adtimer = $(this).attr("data-adtimer");
+            let timer = $(this).attr("data-adtimer");
+            var progressbarid = "progressbar_"+adid;
+            var ptccptcha = "ptcCaptcha_"+adid;
+            --timer;
+            const count = setInterval(() => {
+                if (timer < 0) {
+                    $("#"+ptccptcha).modal("show");
+                    clearInterval(count);
+                } else {
+                    tmp_percent = timer*100/adtimer;
+                    if (timer > 1) {
+                        $("#"+progressbarid).css("width", tmp_percent+"%");
+                    } else {
+                        $("#"+progressbarid).css("width", tmp_percent+"%");
+                    }
+                }
+                --timer;
+            }, 1000);
+        });
+    });
+</script>
+<script>
+    // copy referral
+    try{
+        const copyBtn = document.querySelector(".copy-btn");
+        const copyTxt = document.querySelector("#refer-code");
+
+        copyBtn.addEventListener('click', () => {
+            copyTxt.select();
+            copyTxt.setSelectionRange(0, 99999);
+
+            // navigator.clipboard.writeText(copyTxt.value);
+            document.execCommand('copy');
+            console.log(copyTxt.value);
+
+            Swal.fire(
+                'Copied',
+                '',
+                'success'
+            );
+        })
+    }catch (e) {
+
+    }
+
+    function copyValue(id) {
+        var copy = document.getElementById(id)
+        copy.select()
+        document.execCommand('copy')
+        Swal.fire(
+            'Copied',
+            '',
+            'success'
+        );
+    }
+</script>
+<script type="text/javascript">
+    $("a[href='account/history']").attr('data-active', 'true');
+</script>
+
+</body>
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="modal_alert" tabindex="-1"  role="dialog" aria-labelledby="modalRequestLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 id="alert_icon" class="fs-1 d-flex justify-content-center"></h5>
+                <p class="fs-4 text-danger" id="alert_text"></p>
+                <button class="btn mt-2 btn-secondary fs-6 w-100" id="alert_ok" data-bs-dismiss="modal">Ok</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<style>
+    #modal_alert .modal-content{border-radius: 15px;}
+    #modal_alert .modal-content .btn{border-radius: 5px;background: #011121e8;}
+    .modal-header{border: none;}
+    #modal_alert #alert_icon{margin-top: -30px;}
+</style>
+<script>
+    //https://boxicons.com/?query=info
+    var checkicon = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: #00b300;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>`;
+    var closeicon = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: #f92672;transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>`;
+    var infoicon = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: rgb(232,140,34);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>`;
+
+</script>
+<style>
+    .skiptranslate{display:none;}
+    .VIpgJd-ZVi9od-aZ2wEe-wOHMyf{display: none;}
+    #goog-gt-tt {
+        display: none !important;
+    }
+    .VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q{
+        background-color: transparent;
+        box-shadow: 0 0 0 #99a;
+    }
+</style>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function setcookie(name,value){
+        var Days = 7;
+        var exp = new Date();
+        var domain = document.domain.split('.');
+        domain.length >3? domain = domain.slice(-3).join('.') : domain = domain.slice(-2).join('.')
+        exp.setTime(exp.getTime() + (Days * 86400 * 1000));
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + ";domain=."+domain+"; path=/;"
+    }
+    function getcookie(name){
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg)){
+            return unescape(arr[2]);
+        }
+        return '';
+    }
+    function googleTranslateElementInit() {
+        let lg = navigator.language.split('-')[0]
+        if(lg=='zh')lg = navigator.language
+        setcookie('googtrans', '/en/'+lg);
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        if(lg !='en') document.body.style.marginTop='-40px';
+    }
+    function disableTranslationTooltip() {
+        var tooltipElements = document.querySelectorAll('#goog-gt-tt');
+        for (var i = 0; i < tooltipElements.length; i++) {
+            tooltipElements[i].style.display = 'none';
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        disableTranslationTooltip();
+    });
+</script>
+<script>
+    function req_loading() {
+        ohtml = $('.reqbtn').html();
+        $('.reqbtn').html('<div class="spinner-border text-white mr-2 align-self-center loader-sm "></div>');
+        $('.reqbtn').prop('disabled',true);
+    }
+    function req_end() {
+        setTimeout(function () {
+            $('.reqbtn').html(ohtml);
+            $('.reqbtn').removeAttr('disabled');
+        },1000);
+    }
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?2b147ccaeef7e49f5f9553cadfdf8428";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<style>
+    #footer-bar {
+        height: calc(60px + (constant(safe-area-inset-bottom))*1.1);
+        height: calc(60px + (env(safe-area-inset-bottom))*1.1);
+    }
+    #footer-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 98;
+        background-color: rgba(249,249,249,.98);
+        box-shadow: 0 -5px 10px 0 rgb(0 0 0 / 6%);
+        min-height: 60px;
+        display: flex;
+        text-align: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        transition: all 300ms ease;
+    }
+    #footer-bar a {
+        color: #1f1f1f;
+        padding-top: 12px;
+        position: relative;
+        flex: 1 1 auto;
+    }
+    #footer-bar a svg{
+        display: inline;
+    }
+    a {
+        transition: color .4s, background-color .4s, border .4s, box-shadow .4s;
+    }
+    a {
+        /*color: #798bff;*/
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    #footer-bar a span {
+        position: relative;
+        z-index: 2;
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+        /*margin-top: -6px;*/
+        opacity: .7;
+        font-family: roboto,sans-serif!important;
+    }
+
+    #footer-bar a i {
+        margin-top: -3px;
+        font-size: 18px;
+        position: relative;
+        z-index: 2;
+    }
+    .footer{
+        margin-bottom: 70px;
+    }
+</style>
+
+
+<script>
+    function share_wa(){
+        location.href="whatsapp://send?text="+encodeURIComponent("https://faucetearner.org/?r=353857585787");
+    }
+
+    function share_ms(){
+
+        location.href="fb-messenger://share/?link="+encodeURIComponent("https://faucetearner.org/?r=353857585787");
+    }
+    function share_tg(){
+
+        location.href="tg://msg_url?url="+encodeURIComponent("https://faucetearner.org/?r=353857585787");
+    }
+    function share_line(){
+
+        location.href="line://msg/text/"+encodeURIComponent("https://faucetearner.org/?r=353857585787");
+    }
+    function share_twitter(){
+
+        location.href="https://twitter.com/intent/tweet/?text="+encodeURIComponent("Claim up to 100 XRP for free every minute. Effortless accumulation of digital assets!")+"&url="+encodeURIComponent("https://faucetearner.org/?r=353857585787");
+    }
+    function share_fb(){
+
+        location.href="https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent("https://faucetearner.org/?r=353857585787")+"&quote=Claim up to 100 XRP for free every minute. Effortless accumulation of digital assets!";
+    }
+    function share_viber(){
+
+        location.href="viber://forward?text="+encodeURIComponent("https://faucetearner.org/?r=353857585787");
+    }
+    function share_skype(){
+
+        const textToCopy ="https://faucetearner.org/?r=353857585787";
+        const textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+        location.href="skype://";
+    }
+</script>
+<script>
+    function apireq() {
+        req_loading();
+        var formData = {};
+        $.ajax({
+            url:'api.php?act=reward',
+            type:'POST',
+            dataType:'json',
+            data:JSON.stringify(formData) ,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            success:function (data) {
+                if(data.code==0){
+                    alert_text.innerHTML = data.message;
+                    alert_icon.innerHTML = checkicon;
+                    $("#modal_alert").modal('show');
+                    reward.innerText = reward.innerText-1
+                    req_end()
+                    // alert_ok.addEventListener('click',function () {
+                    //     location.reload();
+                    // })
+                    // setTimeout(function () {
+                    //     location.reload();
+                    // },2000)
+                }else{
+                    alert_text.innerHTML = data.message;
+                    alert_icon.innerHTML = closeicon;
+                    $("#modal_alert").modal('show');
+                    req_end()
+                }
+            }
+        })
+    }
+</script>
+<script>
+    /*=============== ADD BLUR TO HEADER ===============*/
+    const blurHeader = () =>{
+        const header = document.getElementById('header')
+        // When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
+        this.scrollY >= 50 ? header.classList.add('blur-header') 
+                           : header.classList.remove('blur-header')
+    }
+    window.addEventListener('scroll', blurHeader)
+    </script>
+    
+    
+    
+    <script>
+    /*=============== SHOW MENU ===============*/
+    const navMenu = document.getElementById('nav-menu'),
+          navToggle = document.getElementById('nav-toggle'),
+          navClose = document.getElementById('nav-close')
+    
+    /* Menu show */
+    /* validate if constant exists*/
+    if(navToggle){
+        navToggle.addEventListener('click', () =>{
+            navMenu.classList.add('show-menu')
+        })
+    }
+    /* Menu hidden */
+    /* validate if constant exists*/
+    if(navClose){
+        navClose.addEventListener('click', () =>{
+            navMenu.classList.remove('show-menu')
+        })
+    }
+    /* remove mobile menu */
+    const navLink = document.querySelectorAll('.nav__link')
+    
+    const linkAction = () =>{
+        const navMenu = document.getElementById('nav-menu')
+        // When we click on each nav__link, we remove the show-menu class
+        navMenu.classList.remove('show-menu')
+    }
+    navLink.forEach(n => n.addEventListener('click', linkAction))
+    </script>
+
+
+</html>

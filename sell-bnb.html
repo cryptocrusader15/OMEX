@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CryptoCrusaders | Xchange your Crypto</title>
+    <meta name="description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+
+  <meta property="og:image" content="https://river.com/images/social/river-preview-1d7f875b692a43a2d831ac6f5169ee0e.webp">
+  <meta property="og:title" content="Crypto Crusaders| Buy and Sell Crypto Instantly">
+  <meta property="og:description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cryptocrusaders.com/">
+  <meta property="og:site_name" content="Crypto Crusaders">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Crypto_Crusade | Buy and Sell Crypto Instantly">
+  <meta property="twitter:description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+  <meta property="twitter:image" content="https://river.com/images/social/river-preview-1d7f875b692a43a2d831ac6f5169ee0e.webp">
+  <meta property="twitter:site" name="twitter:site" content="@Crypto__Crusade">
+    
+
+   <!--=============== FAVICON ===============-->
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="deposit.css">
+   <link rel="stylesheet" href="deposit.scss">
+   <link rel="stylesheet" href="css.css.map">
+   <link rel="stylesheet" href="csss.css.map">
+
+
+
+
+      <!--=============== ICON ===============-->
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/capital-omega.png">
+
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.6.1.js"></script>
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.6.1.min.js"></script>
+  <script src="modal.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <style>
+      .alert-success {
+          color: #ffffff;
+          background-color: rgb(185 226 66 / 75%) !important;
+          border-color: #badbcc !important;
+      }
+  </style>
+  <script>
+      var ohtml;
+  </script>
+</head>
+
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">
+            <img width="25" height="25" src="https://img.icons8.com/color/48/capital-omega.png" alt="crusader"/>OMEGA<span>XCHANGE</span> 
+           </a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="updates.html" class="nav__link">Updates</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="trade.html" class="nav__link">Trade With Us</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact Us</a>
+                 </li>
+              </ul>
+
+              <!--Close button-->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <!--Toggle button -->
+           <div class="nav__toogle" id="nav-toggle">
+           <i class="ri-menu-line"></i>
+         </div>
+        </nav>
+     </header>
+
+
+           <!--==================== MAIN ====================-->
+           <main class="main">
+
+<div class="main-content">
+<div class="container-fluid">
+<div class="my-3">
+    <div class="alert alert-primary">Now Refer Commision is Up to <b translate="no" class="fs-2 text-warning">10%</b>.
+         And whenever you invite someone, you will get an extra chance to draw a high bonus.
+     <a href="referral.html" class="text-primary" style="text-decoration: underline">Refer Your Friends Now</a> 
+    </div>
+</div>
+
+
+
+<h1 class="btc__calc">BNB to Naira Calculator</h1>
+<h3 class="use__this"> use this Calculator to know how much you'll recieve in naira using our usdt/ngn rate</h3>
+<div>
+  <label for="bnbAmount" class="amount">BNB Amount:</label>
+  <input type="number" id="bnbAmount" step="0.0001" min="0" class="number">
+</div>
+<div>
+  <button id="convertButton"  class="convert">Convert</button>
+</div>
+
+<div id="result" class="result"></div>
+
+
+
+<div class="row px-3">
+<div class="col-12">
+<div class="welcome-card">
+<div class="widget-header">
+<h4 class="fw-bold py-3">SELL BNB</h4>
+
+<div class="my-3 d-flex justify-content-center">
+    <button style="flex:1;"  class=" solid_btn text-white btn-lg px-3 py-2 fs-6 " onclick="location.href='sell-bnb.html'">SELL</button>
+    <div style="width: 10px;"></div>
+    <button style="flex:1;"  class=" solid_btn text-white btn-lg px-3 py-2 fs-6 " onclick="location.href='buy-bnb.html'">BUY</button>
+</div>
+
+         <div class="widget-content widget-content-area">
+        <p class="text-danger text-center"><b>input the amount of BNB you want to send</b></p>
+
+        <div class="form-group">
+            <label>Amount (BNB)</label>
+            <div class="row my-3">
+                <div class="col-sm-6">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                                <span class="input-group-texts bgp text-white" id="targetCurrency">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white me-2" viewBox="0 0 24 24" width="24"
+                                         height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path fill="currentColor"
+                                          d="M17 16h2V4H9v2h8v10zm0 2v3c0 .552-.45 1-1.007 1H4.007A1.001 1.001 0 0 1 3 21l.003-14c0-.552.45-1 1.007-1H7V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-3zM5.003 8L5 20h10V8H5.003zM7 16h4.5a.5.5 0 1 0 0-1h-3a2.5 2.5 0 1 1 0-5H9V9h2v1h2v2H8.5a.5.5 0 1 0 0 1h3a2.5 2.5 0 1 1 0 5H11v1H9v-1H7v-2z"/>
+                                </svg>BNB</span>
+                        </div>
+                        <input type="number" step="0.01" name="token" id="amount" class="form-control" onchange>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex items-center">
+            <div class="">Recommended more than <span class="text-warning">$10 worth of BNB</span>. Maximum: <span class="text-warning">$10,000 worth of BNB</span></div>
+        </div>
+
+        <div class="mt-2 fs-5 text-info">The more you sell the higher the rate</div>
+
+        <div class="my-3">
+            👉<a class="text-primary" href="javascript:;" onclick="searchutb(this)">How to top up a bnb wallet?</a>
+        </div>
+        <h2 class="text-black font-medium text-sm leading-none ml-9">
+            Send <span class="text-danger" id="btc_amount"></span> BNB to:
+        </h2>
+        <div class="my-3 d-flex items-center">
+            <input style="width: 70%" class="form-control" type="text" id="copy_value" value="15sVZXvRuG3kwivCbKdqKZ5WeEX3tKexYg" readonly >
+            <button class="input-group-texts  text-white" onclick="copyValue('copy_value')"><i class="fas fa-copy"></i> Copy</button>
+        </div>
+
+        
+        <a id="qrout" class="d-block p-3 bg-white" style="width: max-content"
+           href="bitcoin:15sVZXvRuG3kwivCbKdqKZ5WeEX3tKexYg" target="_blank">
+            <script src="public/js/qrcode.min.js"></script>
+            <script> var qrout = document.getElementById('qrout');
+                var qrcode = new QRCode(qrout, {
+                    text: "bitcoin:15sVZXvRuG3kwivCbKdqKZ5WeEX3tKexYg",
+                    width: 150,
+                    height: 150,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.L
+                }); </script>
+        </a>
+
+
+        <form action="" class="popup__form" id="contact-form">
+            <div class="popup__group">
+               <input type="text" name="user_name" required placeholder="your bank name" class="sell__input">
+               <input type="email" name="user_email" required placeholder="your email" class="sell__input">
+            </div>
+            <textarea name="user_project" required placeholder="your account name and account number" class="sell__input"></textarea>
+        <p class="popup__message" id="contact-message"></p>
+        <button type="submit" class="button popup__button">
+         Submit
+        </button>
+         </form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row px-3">
+<div class="col-12">
+<div class="welcome-card mb-2">
+<h4 class="fw-bold pb-3">Deposit History</h4>
+<div class="table-responsive">
+<table class="table text-center">
+    <thead class="bgp">
+    <tr>
+        <th scope="col">Amount</th>
+        <th scope="col">Status</th>
+        <th scope="col">Date</th>
+    </tr>
+    </thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="public/kiddynew/dash/js/main.js"></script>
+<script src="public/bootstrap/js/popper.min.js"></script>
+<script src="public/bootstrap/js/bootstrap.min.js"></script>
+<script src="public/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="public/assets/js/app.js"></script>
+<script src="public/js/main.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+App.init();
+});
+</script>
+
+
+<script src="public/assets/js/custom.js"></script>
+<script src="public/plugins/sweetalerts/sweetalert2.min.js"></script>
+<script src="public/plugins/sweetalerts/custom-sweetalert.js"></script>
+
+
+
+
+<script>
+$(".adoption option").hide();
+$(".adoption #default_adoption").show();
+$("#adtype").change(function () {
+var adtype = $(this).val();
+$(".adoption option").hide();
+$(".adoption option:selected").removeAttr("selected");
+$(".adoption #default_adoption").show();
+$(".adoption #default_adoption").attr('selected', 'selected');
+$(".adoption #"+adtype).show();
+});
+</script>
+
+
+
+<script>
+$(document).ready(function () {
+
+$(".ptc_window").click(function(){
+let tmp_percent;
+var adid = $(this).attr("data-adkey");
+$("#parprogressbar_"+adid).show();
+let adtimer = $(this).attr("data-adtimer");
+let timer = $(this).attr("data-adtimer");
+var progressbarid = "progressbar_"+adid;
+var ptccptcha = "ptcCaptcha_"+adid;
+--timer;
+const count = setInterval(() => {
+if (timer < 0) {
+    $("#"+ptccptcha).modal("show");
+    clearInterval(count);
+} else {
+    tmp_percent = timer*100/adtimer;
+    if (timer > 1) {
+        $("#"+progressbarid).css("width", tmp_percent+"%");
+    } else {
+        $("#"+progressbarid).css("width", tmp_percent+"%");
+    }
+}
+--timer;
+}, 1000);
+});
+});
+</script>
+
+
+
+
+<script>
+// copy referral
+try{
+const copyBtn = document.querySelector(".copy-btn");
+const copyTxt = document.querySelector("#refer-code");
+
+copyBtn.addEventListener('click', () => {
+copyTxt.select();
+copyTxt.setSelectionRange(0, 99999);
+
+// navigator.clipboard.writeText(copyTxt.value);
+document.execCommand('copy');
+console.log(copyTxt.value);
+
+Swal.fire(
+'Copied',
+'',
+'success'
+);
+})
+}catch (e) {
+
+}
+
+function copyValue(id) {
+var copy = document.getElementById(id)
+copy.select()
+document.execCommand('copy')
+Swal.fire(
+'Copied',
+'',
+'success'
+);
+}
+</script>
+
+
+
+<script type="text/javascript">
+$("a[href='account/history']").attr('data-active', 'true');
+</script>
+
+
+
+</body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal_alert" tabindex="-1"  role="dialog" aria-labelledby="modalRequestLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<h5 id="alert_icon" class="fs-1 d-flex justify-content-center"></h5>
+<p class="fs-4 text-danger" id="alert_text"></p>
+<button class="btn mt-2 btn-secondary fs-6 w-100" id="alert_ok" data-bs-dismiss="modal">Ok</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<style>
+#modal_alert .modal-content{border-radius: 15px;}
+#modal_alert .modal-content .btn{border-radius: 5px;background: #011121e8;}
+.modal-header{border: none;}
+#modal_alert #alert_icon{margin-top: -30px;}
+</style>
+
+
+
+<script>
+//https://boxicons.com/?query=info
+var checkicon = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: #00b300;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>`;
+var closeicon = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: #f92672;transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>`;
+var infoicon = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: rgb(232,140,34);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>`;
+</script>
+
+
+<style>
+.skiptranslate{display:none;}
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf{display: none;}
+#goog-gt-tt {
+display: none !important;
+}
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q{
+background-color: transparent;
+box-shadow: 0 0 0 #99a;
+}
+</style>
+</main>
+
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+<script type="text/javascript">
+function setcookie(name,value){
+var Days = 7;
+var exp = new Date();
+var domain = document.domain.split('.');
+domain.length >3? domain = domain.slice(-3).join('.') : domain = domain.slice(-2).join('.')
+exp.setTime(exp.getTime() + (Days * 86400 * 1000));
+document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + ";domain=."+domain+"; path=/;"
+}
+function getcookie(name){
+var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+if(arr=document.cookie.match(reg)){
+return unescape(arr[2]);
+}
+return '';
+}
+function googleTranslateElementInit() {
+let lg = navigator.language.split('-')[0]
+if(lg=='zh')lg = navigator.language
+setcookie('googtrans', '/en/'+lg);
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+if(lg !='en') document.body.style.marginTop='-40px';
+}
+function disableTranslationTooltip() {
+var tooltipElements = document.querySelectorAll('#goog-gt-tt');
+for (var i = 0; i < tooltipElements.length; i++) {
+tooltipElements[i].style.display = 'none';
+}
+}
+document.addEventListener('DOMContentLoaded', function () {
+disableTranslationTooltip();
+});
+</script>
+
+
+
+<script>
+function req_loading() {
+ohtml = $('.reqbtn').html();
+$('.reqbtn').html('<div class="spinner-border text-white mr-2 align-self-center loader-sm "></div>');
+$('.reqbtn').prop('disabled',true);
+}
+function req_end() {
+setTimeout(function () {
+$('.reqbtn').html(ohtml);
+$('.reqbtn').removeAttr('disabled');
+},1000);
+}
+</script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?2b147ccaeef7e49f5f9553cadfdf8428";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<script>
+  var btcprice = 1;
+    var tofixed = 3;
+    document.getElementById('amount').addEventListener('input',function () {
+        btc_amount.innerHTML = (amount.value/btcprice).toFixed(tofixed);
+    })
+    function searchutb(a) {
+        window.open("https://www.youtube.com/results?search_query="+a.innerText)
+    }
+
+
+    
+</script>
+        
+        
+        
+        
+     <script>
+/*=============== ADD BLUR TO HEADER ===============*/
+const blurHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('blur-header') 
+                       : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
+</script>
+
+
+
+<script>
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu show */
+/* validate if constant exists*/
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+/* Menu hidden */
+/* validate if constant exists*/
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+/* remove mobile menu */
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+</script>
+
+
+
+<script>
+function convertBNBtoNaira() {
+    // Fetch exchange rate data for Tether (USDT)
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=ngn')
+    .then(response => response.json())
+    .then(data => {
+        // Get the exchange rate of USDT against NGN
+        const exchangeRateUSDTtoNGN = data.tether.ngn; // Extract the actual exchange rate value
+        
+        // Fetch price data for Bitcoin (BTC)
+        fetch('https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd')
+        .then(response => response.json())
+        .then(data => {
+                             // Get the USD price of Binance Coin
+        const bnbPriceUSDT = data.binancecoin.usd;
+            // Decrement the exchange rate by 100 NGN
+            const updatedExchangeRateUSDTtoNGN = exchangeRateUSDTtoNGN - 100;
+
+            const bnbAmount = parseFloat(document.getElementById('bnbAmount').value);
+
+            // Calculate the Naira amount
+            const nairaAmount = bnbAmount * bnbPriceUSDT * updatedExchangeRateUSDTtoNGN;
+
+            // Display the result on the webpage
+            document.getElementById('result').innerHTML = `For ${bnbAmount} BTC, you would recieve approximately ${nairaAmount.toFixed(2)} NGN`;
+        })
+        .catch(error => {
+            console.error('Error fetching bnb data:', error);
+            document.getElementById('result').innerHTML = 'Error fetching bnb data. Please try again later.';
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching Tether data:', error);
+        document.getElementById('result').innerHTML = 'Error fetching Tether data. Please try again later.';
+    });
+}
+// Add an event listener to the button to trigger the conversion
+document.getElementById('convertButton').addEventListener('click', convertBNBtoNaira);
+ </script>
+
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
+const sendEmail = (e) =>{
+    e.preventDefault()
+    // serviceID - templateID - #form - publicKey
+    emailjs.sendForm('service_0e5fk5f', 'template_tt6tjao', '#contact-form', 'kaiCHyjwG39gHZhzN')
+    .then(() =>{
+    //show send message
+    contactMessage.textContent = 'Message send successfully'   
+    // Remove message after five seconds
+    setTimeout(() => {
+    contactMessage.textContent = ''
+    }, 5000)
+    // Clear input fields
+    contactForm.reset()
+    }, () =>{
+        //show error message
+        contactMessage.textContent = 'Message not sent (service error)'
+    })
+}
+ contactForm.addEventListener('submit', sendEmail)
+</script>
+
+</html>

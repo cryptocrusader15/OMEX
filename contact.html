@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CryptoCrusaders | Xchange your Crypto</title>
+    <meta name="description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+
+  <meta property="og:image" content="https://river.com/images/social/river-preview-1d7f875b692a43a2d831ac6f5169ee0e.webp">
+  <meta property="og:title" content="Crypto Crusaders| Buy and Sell Crypto Instantly">
+  <meta property="og:description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cryptocrusaders.com/">
+  <meta property="og:site_name" content="Crypto Crusaders">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Crypto_Crusade | Buy and Sell Crypto Instantly">
+  <meta property="twitter:description" content="Easily Buy and Sell your Bitcoin, USDT and Alt coins in minutes. Zero fees. Trade your Crypto with confidence with world-class security.">
+  <meta property="twitter:image" content="https://river.com/images/social/river-preview-1d7f875b692a43a2d831ac6f5169ee0e.webp">
+  <meta property="twitter:site" name="twitter:site" content="@Crypto__Crusade">
+    
+
+   <!--=============== EMAIL JS ===============-->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="styles.css">
+
+      <!--=============== ICON ===============-->
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/capital-omega.png">
+
+</head>
+
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">
+            <img width="25" height="25" src="https://img.icons8.com/color/48/capital-omega.png" alt="crusader"/>OMEGA<span>XCHANGE</span> 
+           </a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="about.html" class="nav__link">About Us</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="updates.html" class="nav__link">Updates</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="trade.html" class="nav__link">Trade With Us</a>
+                 </li>
+                 <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact Us</a>
+                 </li>
+              </ul>
+
+              <!--Close button-->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <!--Toggle button -->
+           <div class="nav__toogle" id="nav-toggle">
+           <i class="ri-menu-line"></i>
+         </div>
+        </nav>
+     </header>
+
+
+           <!--==================== MAIN ====================-->
+           <main class="main">
+
+             <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h3 class="section__subtitle">
+               Get In <span>Touch</span>
+            </h3>
+
+            <h2 class="section__title">
+               Contact Us for Any Complaints or Suggestions
+            </h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+                     <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+                  </div>
+
+                  <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="button contact__button">
+               Send Message
+              </button>
+
+               </form>
+            </div>
+         </section>
+
+         <script>
+            
+/*=============== ADD BLUR TO HEADER ===============*/
+const blurHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('blur-header') 
+                       : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
+
+
+
+
+
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu show */
+/* validate if constant exists*/
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+/* Menu hidden */
+/* validate if constant exists*/
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+/* remove mobile menu */
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+
+
+
+/*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
+const sendEmail = (e) =>{
+    e.preventDefault()
+    // serviceID - templateID - #form - publicKey
+    emailjs.sendForm('service_0e5fk5f', 'template_tt6tjao', '#contact-form', 'kaiCHyjwG39gHZhzN')
+    .then(() =>{
+    //show send message
+    contactMessage.textContent = 'Message send successfully'   
+    // Remove message after five seconds
+    setTimeout(() => {
+    contactMessage.textContent = ''
+    }, 5000)
+    // Clear input fields
+    contactForm.reset()
+    }, () =>{
+        //show error message
+        contactMessage.textContent = 'Message not sent (service error)'
+    })
+}
+ contactForm.addEventListener('submit', sendEmail)
+         </script>
+           </main>
+
+         <!--=============== JAVASCRIPT ===============-->
+  <script src="script.js"> </script>
+  <script src="scriptt.js"></script>
+    
+        </body>
+        </html>

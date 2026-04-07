@@ -38,43 +38,7 @@
 </head>
 
 <body>
-<script>
-                var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?71144';
-                var s = document.createElement('script');
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = url;
-                var options = {
-                "enabled":true,
-                "chatButtonSetting":{
-                    "backgroundColor":"#00e785",
-                    "ctaText":"Chat with us",
-                    "borderRadius":"25",
-                    "marginLeft": "0",
-                    "marginRight": "20",
-                    "marginBottom": "50",
-                    "ctaIconWATI":false,
-                    "position":"right"
-                },
-                "brandSetting":{
-                    "brandName":"Wati",
-                    "brandSubTitle":"undefined",
-                    "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
-                    "welcomeText":"Hi there!\nHow can I help you?",
-                    "messageText":"Hello, %0A I have a question about {{page_link}}",
-                    "backgroundColor":"#00e785",
-                    "ctaText":"Chat with us",
-                    "borderRadius":"25",
-                    "autoShow":false,
-                    "phoneNumber":"2349066049119"
-                }
-                };
-                s.onload = function() {
-                    CreateWhatsappChatWidget(options);
-                };
-                var x = document.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(s, x);
-            </script>
+
     <header class="header" id="header">
         <nav class="nav container">
            <a href="#" class="nav__logo">
@@ -310,6 +274,8 @@
                 <h3 class="section__subtitle">
                   Hey<span>wanna join them? Trade with us now</h3>
             </section>
+            </main>
+            </body>
 
             <script>
                /*=============== RATES ===============*/
@@ -457,8 +423,6 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
             </script>
-            </main>
-
 
              <!--==================== FOOTER ====================-->
       <footer class="footer">
@@ -493,8 +457,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
          <!--=============== JAVASCRIPT ===============-->
     <script src="script.js"></script>
     <script src="scriptt.js"></script>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+    
+    <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -505,6 +469,44 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
-</body>
+
+<script>
+                var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?71144';
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url;
+                var options = {
+                "enabled":true,
+                "chatButtonSetting":{
+                    "backgroundColor":"#00e785",
+                    "ctaText":"message us on whatsapp",
+                    "borderRadius":"25",
+                    "marginLeft": "0",
+                    "marginRight": "40",
+                    "marginBottom": "150",
+                    "ctaIconWATI":false,
+                    "position":"right"
+                },
+                "brandSetting":{
+                    "brandName":"Wati",
+                    "brandSubTitle":"undefined",
+                    "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+                    "welcomeText":"Hi there!\nHow can I help you?",
+                    "messageText":"Hello, %0A I have a question about {{page_link}}",
+                    "backgroundColor":"#00e785",
+                    "ctaText":"Chat with us",
+                    "borderRadius":"25",
+                    "autoShow":false,
+                    "phoneNumber":"2349066049119"
+                }
+                };
+                s.onload = function() {
+                    CreateWhatsappChatWidget(options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            </script>
+
+
 </html>

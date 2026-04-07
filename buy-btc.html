@@ -65,6 +65,8 @@
   <script>
       var ohtml;
   </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 
@@ -123,7 +125,7 @@
 
 
 
-<h1 class="btc__calc"></h1>>Naira to BTC Converter</h1>
+<h1 class="btc__calc">Naira to BTC Converter</h1>
 <h3 class="use__this"> use this Calculator to know how much you'll recieve in BTC using our usdt/ngn rate</h3>
 
   <div>
@@ -180,7 +182,7 @@
         <div class="mt-2 fs-5 text-info">The more you buy the lower the rate</div>
 
         <div class="my-3">
-            👉<a class="text-primary" href="javascript:;" onclick="searchutb(this)">How to top up a bitcoin wallet?</a>
+            👉<p>CLICK ON THE BLUE ICON(WE ARE HERE) AT THE BOTTOM RIGHT AND MESSAGE US TO OPEN A TRADING SESSION WITH US BEFORE YOU PROCEED</p>
         </div>
         <h2 class="text-black font-medium text-sm leading-none ml-9">
             Send <span class="text-danger" id="btc_amount"></span>to the account number below:
@@ -206,18 +208,6 @@
                 }); </script>
         </a>
 
-
-        <form action="" class="popup__form" id="contact-form">
-            <div class="popup__group">
-               <input type="text" name="user_name" required placeholder="your name" class="sell__input">
-               <input type="email" name="user_email" required placeholder="your email" class="sell__input">
-            </div>
-            <textarea name="user_project" required placeholder="your wallet address and wallet chain type" class="sell__input"></textarea>
-        <p class="popup__message" id="contact-message"></p>
-        <button type="submit" class="button popup__button">
-         Submit
-        </button>
-         </form>
 
 </div>
 </div>
@@ -273,8 +263,6 @@ App.init();
 <script src="public/plugins/sweetalerts/custom-sweetalert.js"></script>
 
 
-
-
 <script>
 $(".adoption option").hide();
 $(".adoption #default_adoption").show();
@@ -289,10 +277,8 @@ $(".adoption #"+adtype).show();
 </script>
 
 
-
 <script>
 $(document).ready(function () {
-
 $(".ptc_window").click(function(){
 let tmp_percent;
 var adid = $(this).attr("data-adkey");
@@ -319,8 +305,6 @@ if (timer < 0) {
 });
 });
 </script>
-
-
 
 
 <script>
@@ -366,8 +350,17 @@ $("a[href='account/history']").attr('data-active', 'true');
 </script>
 
 
-
-</body>
+ <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69d292ea1772311c3585e4f9/1jlf8rpgk';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
 
 
 <!-- Modal -->
@@ -420,7 +413,6 @@ box-shadow: 0 0 0 #99a;
 
 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 
 
 <script type="text/javascript">
@@ -547,8 +539,7 @@ convertBTCtoNaira();
 
 </script>
         
-        
-        
+         
         
      <script>
 /*=============== ADD BLUR TO HEADER ===============*/
@@ -636,35 +627,7 @@ function convertNairatoBTC() {
 
 // Add an event listener to the button to trigger the conversion
 document.getElementById('convertButton').addEventListener('click', convertNairatoBTC);
-
  </script>
 
-
-
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById('contact-form'),
-      contactMessage = document.getElementById('contact-message')
-const sendEmail = (e) =>{
-    e.preventDefault()
-    // serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_0e5fk5f', 'template_tt6tjao', '#contact-form', 'kaiCHyjwG39gHZhzN')
-    .then(() =>{
-    //show send message
-    contactMessage.textContent = 'Message send successfully'   
-    // Remove message after five seconds
-    setTimeout(() => {
-    contactMessage.textContent = ''
-    }, 5000)
-    // Clear input fields
-    contactForm.reset()
-    }, () =>{
-        //show error message
-        contactMessage.textContent = 'Message not sent (service error)'
-    })
-}
- contactForm.addEventListener('submit', sendEmail)
-</script>
-
+</body>
 </html>

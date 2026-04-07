@@ -35,16 +35,12 @@
    <link rel="stylesheet" href="csss.css.map">
 
 
-
-
       <!--=============== ICON ===============-->
   <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/capital-omega.png">
 
   <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.6.1.js"></script>
   <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.6.1.min.js"></script>
   <script src="modal.js"></script>
-
-
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
@@ -69,7 +65,6 @@
 
 
 <body>
-
     <header class="header" id="header">
         <nav class="nav container">
            <a href="#" class="nav__logo">
@@ -136,7 +131,6 @@
 <div id="result" class="result"></div>
 
 
-
 <div class="row px-3">
 <div class="col-12">
 <div class="welcome-card">
@@ -180,13 +174,13 @@
         <div class="mt-2 fs-5 text-info">The more you sell the higher the rate</div>
 
         <div class="my-3">
-            👉<a class="text-primary" href="javascript:;" onclick="searchutb(this)">How to top up an Ethereum wallet?</a>
+           👉<p>CLICK ON THE BLUE ICON(WE ARE HERE) AT THE BOTTOM RIGHT AND MESSAGE US TO OPEN A TRADING SESSION WITH US BEFORE YOU PROCEED</p>
         </div>
         <h2 class="text-black font-medium text-sm leading-none ml-9">
             Send <span class="text-danger" id="btc_amount"></span> Ethereum to:
         </h2>
         <div class="my-3 d-flex items-center">
-            <input style="width: 70%" class="form-control" type="text" id="copy_value" value="15sVZXvRuG3kwivCbKdqKZ5WeEX3tKexYg" readonly >
+            <input style="width: 70%" class="form-control" type="text" id="copy_value" value="0xbb9e3c6ad75920107a1224c14d7d9139bd517c6b" readonly >
             <button class="input-group-texts  text-white" onclick="copyValue('copy_value')"><i class="fas fa-copy"></i> Copy</button>
         </div>
 
@@ -205,18 +199,6 @@
                 }); </script>
         </a>
 
-
-        <form action="" class="popup__form" id="contact-form">
-            <div class="popup__group">
-               <input type="text" name="user_name" required placeholder="your bank name" class="sell__input">
-               <input type="email" name="user_email" required placeholder="your email" class="sell__input">
-            </div>
-            <textarea name="user_project" required placeholder="your account name and account number" class="sell__input"></textarea>
-        <p class="popup__message" id="contact-message"></p>
-        <button type="submit" class="button popup__button">
-         Submit
-        </button>
-         </form>
 
 </div>
 </div>
@@ -259,7 +241,6 @@
 <script src="public/js/main.js"></script>
 
 
-
 <script>
 $(document).ready(function() {
 App.init();
@@ -270,8 +251,6 @@ App.init();
 <script src="public/assets/js/custom.js"></script>
 <script src="public/plugins/sweetalerts/sweetalert2.min.js"></script>
 <script src="public/plugins/sweetalerts/custom-sweetalert.js"></script>
-
-
 
 
 <script>
@@ -286,7 +265,6 @@ $(".adoption #default_adoption").attr('selected', 'selected');
 $(".adoption #"+adtype).show();
 });
 </script>
-
 
 
 <script>
@@ -318,8 +296,6 @@ if (timer < 0) {
 });
 });
 </script>
-
-
 
 
 <script>
@@ -362,9 +338,6 @@ Swal.fire(
 $("a[href='account/history']").attr('data-active', 'true');
 </script>
 
-
-
-</body>
 
 
 <!-- Modal -->
@@ -419,7 +392,6 @@ box-shadow: 0 0 0 #99a;
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
-
 <script type="text/javascript">
 function setcookie(name,value){
 var Days = 7;
@@ -472,7 +444,6 @@ $('.reqbtn').removeAttr('disabled');
 
 
 
-
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -493,13 +464,8 @@ s.parentNode.insertBefore(hm, s);
     })
     function searchutb(a) {
         window.open("https://www.youtube.com/results?search_query="+a.innerText)
-    }
-
-
-    
+    }   
 </script>
-        
-        
         
         
      <script>
@@ -512,7 +478,6 @@ const blurHeader = () =>{
 }
 window.addEventListener('scroll', blurHeader)
 </script>
-
 
 
 <script>
@@ -545,7 +510,6 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 </script>
-
 
 
 <script>
@@ -585,38 +549,21 @@ function convertETHToNaira() {
         document.getElementById('result').innerHTML = 'Error fetching Naira value. Please reload page again.';
     });
 }
-
 // Add an event listener to the button to trigger the conversion
 document.getElementById('convertButton').addEventListener('click', convertETHToNaira);
-
  </script>
 
 
-
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById('contact-form'),
-      contactMessage = document.getElementById('contact-message')
-const sendEmail = (e) =>{
-    e.preventDefault()
-    // serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_0e5fk5f', 'template_tt6tjao', '#contact-form', 'kaiCHyjwG39gHZhzN')
-    .then(() =>{
-    //show send message
-    contactMessage.textContent = 'Message send successfully'   
-    // Remove message after five seconds
-    setTimeout(() => {
-    contactMessage.textContent = ''
-    }, 5000)
-    // Clear input fields
-    contactForm.reset()
-    }, () =>{
-        //show error message
-        contactMessage.textContent = 'Message not sent (service error)'
-    })
-}
- contactForm.addEventListener('submit', sendEmail)
+   <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69d292ea1772311c3585e4f9/1jlf8rpgk';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
-
+</body>
 </html>

@@ -169,18 +169,17 @@
                         <input type="number" step="0.01" name="token" id="amount" class="form-control" onchange>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <div class="d-flex items-center">
-            <div class="">Recommended more than <span class="text-warning">$10 worth of BNB</span>. Maximum: <span class="text-warning">$10,000 worth of btc</span></div>
+            <div class="">Recommended more than <span class="text-warning">$10 worth of BNB</span>. Maximum: <span class="text-warning">$10,000 worth of BNB</span></div>
         </div>
 
         <div class="mt-2 fs-5 text-info">The more you buy the lower the rate</div>
 
         <div class="my-3">
-            👉<a class="text-primary" href="javascript:;" onclick="searchutb(this)">How to top up a bnb wallet?</a>
+            👉<p>CLICK ON THE BLUE ICON(WE ARE HERE) AT THE BOTTOM RIGHT AND MESSAGE US TO OPEN A TRADING SESSION WITH US BEFORE YOU PROCEED</p>
         </div>
         <h2 class="text-black font-medium text-sm leading-none ml-9">
             Send <span class="text-danger" id="bnb_amount"></span>to the account number below:
@@ -205,19 +204,6 @@
                     correctLevel: QRCode.CorrectLevel.L
                 }); </script>
         </a>
-
-
-        <form action="" class="popup__form" id="contact-form">
-            <div class="popup__group">
-               <input type="text" name="user_name" required placeholder="your name" class="sell__input">
-               <input type="email" name="user_email" required placeholder="your email" class="sell__input">
-            </div>
-            <textarea name="user_project" required placeholder="your wallet address and wallet chain type" class="sell__input"></textarea>
-        <p class="popup__message" id="contact-message"></p>
-        <button type="submit" class="button popup__button">
-         Submit
-        </button>
-         </form>
 
 </div>
 </div>
@@ -260,7 +246,6 @@
 <script src="public/js/main.js"></script>
 
 
-
 <script>
 $(document).ready(function() {
 App.init();
@@ -271,8 +256,6 @@ App.init();
 <script src="public/assets/js/custom.js"></script>
 <script src="public/plugins/sweetalerts/sweetalert2.min.js"></script>
 <script src="public/plugins/sweetalerts/custom-sweetalert.js"></script>
-
-
 
 
 <script>
@@ -322,7 +305,6 @@ if (timer < 0) {
 
 
 
-
 <script>
 // copy referral
 try{
@@ -367,9 +349,6 @@ $("a[href='account/history']").attr('data-active', 'true');
 
 
 
-</body>
-
-
 <!-- Modal -->
 <div class="modal fade" id="modal_alert" tabindex="-1"  role="dialog" aria-labelledby="modalRequestLabel" aria-hidden="true" data-backdrop="static">
 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -387,14 +366,12 @@ $("a[href='account/history']").attr('data-active', 'true');
 </div>
 
 
-
 <style>
 #modal_alert .modal-content{border-radius: 15px;}
 #modal_alert .modal-content .btn{border-radius: 5px;background: #011121e8;}
 .modal-header{border: none;}
 #modal_alert #alert_icon{margin-top: -30px;}
 </style>
-
 
 
 <script>
@@ -420,7 +397,6 @@ box-shadow: 0 0 0 #99a;
 
 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 
 
 <script type="text/javascript">
@@ -472,8 +448,6 @@ $('.reqbtn').removeAttr('disabled');
 },1000);
 }
 </script>
-
-
 
 
 <script>
@@ -546,7 +520,6 @@ s.parentNode.insertBefore(hm, s);
 convertBNBtoNaira();
 
 </script>
-        
         
         
         
@@ -636,35 +609,18 @@ function convertNairatoBNB() {
 
 // Add an event listener to the button to trigger the conversion
 document.getElementById('convertButton').addEventListener('click', convertNairatoBNB);
-
  </script>
 
-
-
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById('contact-form'),
-      contactMessage = document.getElementById('contact-message')
-const sendEmail = (e) =>{
-    e.preventDefault()
-    // serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_0e5fk5f', 'template_tt6tjao', '#contact-form', 'kaiCHyjwG39gHZhzN')
-    .then(() =>{
-    //show send message
-    contactMessage.textContent = 'Message send successfully'   
-    // Remove message after five seconds
-    setTimeout(() => {
-    contactMessage.textContent = ''
-    }, 5000)
-    // Clear input fields
-    contactForm.reset()
-    }, () =>{
-        //show error message
-        contactMessage.textContent = 'Message not sent (service error)'
-    })
-}
- contactForm.addEventListener('submit', sendEmail)
+  <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69d292ea1772311c3585e4f9/1jlf8rpgk';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
-
+</body>
 </html>
